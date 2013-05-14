@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="notification_interfal">
+        <item name="choose">Default Interval</item>
+        <!-- <item name="1">1 minute </item> -->
+        <item name="2">5 minutes</item>
+        <item name="5">15 minutes</item>
+        <item name="30">30 minutes</item>
+        <item name="60">1 hour</item>
+        <item name="120">2 hours</item>
+        <item name="180">3 hours</item>
+    </string-array>
+    <string-array name="notification_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <!-- <item>1</item> -->
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="notify_battery">
+        <item name="select">Default Battery Limit</item>
+        <!-- <item name="less50">Less than 100% (Protorype)</item> -->
+        <item name="less50">Less than 50%</item>
+        <item name="less30">Less than 40%</item>
+        <item name="less30">Less than 30%</item>
+        <item name="less30">Less than 25%</item>
+        <item name="less20">Less than 20%</item>
+        <item name="less10">Less than 10%</item>
+    </string-array>
+    <string-array name="battery_notification_values">
+        <item>0</item>
+        <!-- <item>100</item> -->
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>25</item>
+        <item>20</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="traveling_time_limit">
+        <item name="select">Default Travel Time</item>
+        <item name="less50">around 1 hour</item>
+        <item name="less30">around 2 hour</item>
+        <item name="less30">around 3 hour</item>
+        <item name="less30">around 4 hour</item>
+        <item name="less20">around 5 hour</item>
+        <item name="less10">all day (24 hour)</item>
+    </string-array>
+    <string-array name="traveling_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>24</item>
+    </string-array>
+    
+    <string-array name="traveling_max_distance">
+        <item name="select">Default Max Distance</item>
+        <item name="3km">3 KM</item>
+        <item name="5km">5 KM</item>
+        <item name="8km">8 KM</item>
+        <item name="10km">10 KM</item>
+        <item name="30km">30 KM</item>
+    </string-array>
+    
+    <string-array name="traveling_max_distance_values">
+        <item>0</item>
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+
+</resources>

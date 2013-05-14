@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="child_info"
+        android:title="Child Information" >
+        <EditTextPreference
+            android:defaultValue="Derp"
+            android:dialogMessage="Please Enter Your Child&apos;s Name"
+            android:dialogTitle="Child&apos;s Name"
+            android:inputType="text"
+            android:key="child_name"
+            android:summary="Your child default&apos;s name"
+            android:title="Child&apos;s Name" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="phone_information"
+        android:title="SMS Notification" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enable_sms"
+            android:summary="Activate SMS Notification"
+            android:title="Enable Notification by SMS" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dependency="enable_sms"
+            android:dialogMessage="Please enter a number which SMS will be sent"
+            android:dialogTitle="Main Phone Number"
+            android:inputType="number"
+            android:key="phone_main"
+            android:summary="SMS will be sent to this number"
+            android:title="Default Phone Number" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dependency="enable_sms"
+            android:dialogMessage="secondary phone for emergency phone: "
+            android:dialogTitle="Secondary Phone Number (Optional)"
+            android:inputType="number"
+            android:key="phone_secondary"
+            android:summary="Phone number for emergency call"
+            android:title="Secondary Phone Number" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="email_information"
+        android:title="Email Notification" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_email"
+            android:summaryOn="Activate Email Notification"
+            android:title="Enable Notification by Email" />
+
+        <EditTextPreference
+            android:defaultValue="\@gmail.com"
+            android:dependency="enable_email"
+            android:dialogMessage="Enter parent email address"
+            android:dialogTitle="Parents (Recepient) Email"
+            android:inputType="textEmailAddress"
+            android:key="recepient_email"
+            android:summary="This is the parents email. Email will be sent to this address"
+            android:title="Parent&apos;s Email" />
+        <EditTextPreference
+            android:defaultValue="\@gmail.com"
+            android:dependency="enable_email"
+            android:dialogMessage="Enter your child email address"
+            android:dialogTitle="Child&apos;s Email Address"
+            android:inputType="textEmailAddress"
+            android:key="sender_email"
+            android:summary="Child&apos;s email address (This phone email address)"
+            android:title="Child&apos;s Email" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dependency="enable_email"
+            android:dialogMessage="Enter your child email address password"
+            android:dialogTitle="Child&apos;s Email&apos;s Password"
+            android:inputType="textPassword"
+            android:key="sender_email_password"
+            android:summary="Password to authenticate email while sending"
+            android:title="Child Email Password" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

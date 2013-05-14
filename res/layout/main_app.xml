@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:background="@drawable/background"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<Button
+	android:id="@+id/start"
+	android:layout_width="85px"
+	android:layout_height="131px"
+	android:background="@drawable/start"
+	android:layout_x="210dp"
+	android:layout_y="120dp" />
+<Button 
+	android:id="@+id/call" 
+	android:layout_width="88dp" 
+	android:layout_height="108dp"
+	android:background="@drawable/call_app" 
+	android:layout_x="8dp" 
+	android:layout_y="363dp"  />
+<Button
+	android:id="@+id/message"
+	android:layout_width="88px"
+	android:layout_height="108px"
+	android:background="@drawable/message_app"
+	android:layout_x="110dp"
+	android:layout_y="363dp" />
+<Button
+	android:id="@+id/usage"
+	android:layout_width="88px"
+	android:layout_height="108px"
+	android:background="@drawable/about_app"
+	android:layout_x="216dp"
+	android:layout_y="363dp" />
+<TextView 
+	android:id="@+id/time"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_x="33dp"
+	android:layout_y="5dp"
+	android:textColor="#FFFFFF"
+	android:text="@string/time" />
+<RelativeLayout
+	android:id="@+id/setting"
+	android:background="@drawable/setting_app"
+	android:layout_width="94px"
+	android:layout_height="33px"
+	android:layout_x="225dp"
+	android:layout_y="0dp">
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/locationInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="8dp"
+    android:layout_y="50dp"
+    android:text="Service Off"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+<TextView
+    android:id="@+id/tempBatteryInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="244dp"
+    android:layout_y="53dp"
+    android:text="Battery %"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</AbsoluteLayout>
